@@ -161,7 +161,8 @@ ggplot (ir , aes(x= reorder(name, sumIR), y = ImpactRisk))+
   # geom_violin(fill='gray70')+
   geom_boxplot(fill='gray70',outlier.size = .2, lwd=.2)+
   stat_boxplot(geom ='errorbar', width =.5, lwd=.2)+
+  ylim(c(0,0.05))+
   coord_flip()+
   xlab(NULL)+ylab('Impact Risk')
-ggsave('figures/impactrisk_v2.jpg', width=90, height=210, units = 'mm', dpi=600)
-ggsave('figures/impactrisk_v2.eps', width=90, height=210, units = 'mm', dpi=600)
+ggsave('figures/impactrisk_v3.jpg', width=90, height=210, units = 'mm', dpi=600)
+ggsave('figures/impactrisk_v3.eps', width=90, height=210, units = 'mm', dpi=600)
